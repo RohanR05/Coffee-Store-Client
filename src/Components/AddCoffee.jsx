@@ -9,7 +9,7 @@ const AddCoffee = () => {
     const newCoffee = Object.fromEntries(formData.entries());
     console.log(newCoffee);
 
-    fetch("http://localhost:199/coffees", {
+    fetch("https://coffee-store-server-three-beige.vercel.app/coffees", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
